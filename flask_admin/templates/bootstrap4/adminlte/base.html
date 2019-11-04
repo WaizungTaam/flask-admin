@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="{{ admin_view.author }}">
   {% endblock head_meta %}
 
   <title>{% block title %}{% if admin_view.category %}{{ admin_view.category }} - {% endif %}{{ admin_view.name }} - {{ admin_view.admin.name }}{% endblock %}</title>
@@ -224,7 +224,7 @@
     <div class="float-right d-none d-sm-inline">
       Version 0.1.0
     </div>
-    <strong>Copyright &copy; 2019-2019 JohnDoe.</strong> All rights reserved.
+    <strong>Copyright &copy; 2019 {{ admin_view.author }}.</strong> All rights reserved.
   </footer>
 </div>
 {% endblock page_body %}
